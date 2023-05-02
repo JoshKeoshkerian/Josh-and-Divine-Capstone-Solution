@@ -212,5 +212,80 @@
   <ItemGroup>
     <None Include="Resources\69998644-EE6F-43B7-A43A-49E98CDE9CC7-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
