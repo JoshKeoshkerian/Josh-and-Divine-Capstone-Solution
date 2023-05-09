@@ -1,9 +1,14 @@
 ﻿Imports System.Drawing.Drawing2D
+Imports System.IO
 
 Public Class Form1
 
     Dim Value As Integer
     Dim Number As Integer
+
+    Public Sub Wait()
+        System.Threading.Thread.Sleep(5000) ' 500 milliseconds = 0.5 seconds
+    End Sub
 
     Private Sub Timer_Tick(sender As Object, e As EventArgs) Handles Timer.Tick
 
@@ -12,7 +17,10 @@ Public Class Form1
             Number = 0
             Timer.Interval = 30
             Timer.Enabled = False
+            Me.Visible = False
+            Guess.Show()
             Exit Sub
+
         End If
         Number += 1
 
@@ -167,7 +175,6 @@ Public Class Form1
         ElseIf Number Mod 25 = 18 Then
             pic1.Image = My.Resources.S19
             lblValue.Text = "$5000"
-
         ElseIf Number Mod 25 = 19 Then
             pic1.Image = My.Resources.S20
             lblValue.Text = "$2000"
@@ -187,6 +194,8 @@ Public Class Form1
             pic1.Image = My.Resources.S25
             lblValue.Text = "$1000"
         End If
+        Wait()
+
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
@@ -198,8 +207,7 @@ Public Class Form1
         Timer.Enabled = True
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Visible = False
-        Guess.Show()
-    End Sub
+
+
+
 End Class
