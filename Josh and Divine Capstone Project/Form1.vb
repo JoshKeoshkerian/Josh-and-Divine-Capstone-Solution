@@ -1,4 +1,6 @@
-﻿Public Class Form1
+﻿Imports System.Drawing.Drawing2D
+
+Public Class Form1
 
     Dim Value As Integer
     Dim Number As Integer
@@ -194,5 +196,10 @@
         Randomize()
         Value = Int((50 * Rnd()) + 25)
         Timer.Enabled = True
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Visible = False
+        Guess.Show()
     End Sub
 End Class
