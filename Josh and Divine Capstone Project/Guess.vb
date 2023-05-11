@@ -5,16 +5,8 @@ Public Class Guess
     Dim LetterAmount As Integer
     Public strFileName As String
     Dim strShortName As String
-    Dim Phrase As String
-    Dim Dash As String
-    Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
-
-
-    End Sub
-
-    Private Sub btnNew_Click(sender As Object, e As EventArgs) Handles btnNew.Click
-
-    End Sub
+    Public Phrase As String
+    Public Dash As String
 
     Private Sub Guess_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dash = ""
@@ -60,6 +52,9 @@ Public Class Guess
             End If
         Next
         lblPhrase.Text = Dash
+
+        'Me.Visible = False
+        'Form1.Visible = True
     End Sub
 
     Private Sub lblA_Click(sender As Object, e As EventArgs) Handles lblA.Click
@@ -105,6 +100,13 @@ Public Class Guess
     Private Sub Guess_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
         LetterAmount = 0
         tmrBack.Enabled = False
+        If Form1.Player = 1 Then
+            lblPlayer21.Visible = True
+            lblPlayer22.Visible = False
+        Else
+            lblPlayer22.Visible = True
+            lblPlayer21.Visible = False
+        End If
     End Sub
 
     Private Sub lblB_Click(sender As Object, e As EventArgs) Handles lblB.Click
@@ -117,7 +119,7 @@ Public Class Guess
                 End If
             Next letter
             lblPhrase.Text = Dash
-            lblA.BackColor = Color.Green
+            lblB.BackColor = Color.Green
             Form1.spinValue = Form1.spinValue * LetterAmount
             If Form1.Player = 1 Then
                 Form1.Player1Score += Form1.spinValue
@@ -127,16 +129,16 @@ Public Class Guess
             Form1.lblRunningScore1.Text = Form1.Player1Score.ToString("C0")
             Form1.lblRunningScore2.Text = Form1.Player2Score.ToString("C0")
             tmrBack.Enabled = True
-            lblA.Enabled = False
+            lblB.Enabled = False
         Else
-            lblA.BackColor = Color.Red
+            lblB.BackColor = Color.Red
             If Form1.Player = 1 Then
                 Form1.Player = 2
             Else
                 Form1.Player = 1
             End If
             tmrBack.Enabled = True
-            lblA.Enabled = False
+            lblB.Enabled = False
         End If
     End Sub
 
@@ -160,16 +162,16 @@ Public Class Guess
             Form1.lblRunningScore1.Text = Form1.Player1Score.ToString("C0")
             Form1.lblRunningScore2.Text = Form1.Player2Score.ToString("C0")
             tmrBack.Enabled = True
-            lblA.Enabled = False
+            lblC.Enabled = False
         Else
-            lblA.BackColor = Color.Red
+            lblC.BackColor = Color.Red
             If Form1.Player = 1 Then
                 Form1.Player = 2
             Else
                 Form1.Player = 1
             End If
             tmrBack.Enabled = True
-            lblA.Enabled = False
+            lblC.Enabled = False
         End If
     End Sub
 
@@ -183,7 +185,7 @@ Public Class Guess
                 End If
             Next letter
             lblPhrase.Text = Dash
-            lblA.BackColor = Color.Green
+            lblD.BackColor = Color.Green
             Form1.spinValue = Form1.spinValue * LetterAmount
             If Form1.Player = 1 Then
                 Form1.Player1Score += Form1.spinValue
@@ -193,16 +195,16 @@ Public Class Guess
             Form1.lblRunningScore1.Text = Form1.Player1Score.ToString("C0")
             Form1.lblRunningScore2.Text = Form1.Player2Score.ToString("C0")
             tmrBack.Enabled = True
-            lblA.Enabled = False
+            lblD.Enabled = False
         Else
-            lblA.BackColor = Color.Red
+            lblD.BackColor = Color.Red
             If Form1.Player = 1 Then
                 Form1.Player = 2
             Else
                 Form1.Player = 1
             End If
             tmrBack.Enabled = True
-            lblA.Enabled = False
+            lblD.Enabled = False
         End If
     End Sub
 
@@ -216,7 +218,7 @@ Public Class Guess
                 End If
             Next letter
             lblPhrase.Text = Dash
-            lblA.BackColor = Color.Green
+            lblE.BackColor = Color.Green
             Form1.spinValue = Form1.spinValue * LetterAmount
             If Form1.Player = 1 Then
                 Form1.Player1Score += Form1.spinValue
@@ -226,16 +228,16 @@ Public Class Guess
             Form1.lblRunningScore1.Text = Form1.Player1Score.ToString("C0")
             Form1.lblRunningScore2.Text = Form1.Player2Score.ToString("C0")
             tmrBack.Enabled = True
-            lblA.Enabled = False
+            lblE.Enabled = False
         Else
-            lblA.BackColor = Color.Red
+            lblE.BackColor = Color.Red
             If Form1.Player = 1 Then
                 Form1.Player = 2
             Else
                 Form1.Player = 1
             End If
             tmrBack.Enabled = True
-            lblA.Enabled = False
+            lblE.Enabled = False
         End If
     End Sub
 End Class

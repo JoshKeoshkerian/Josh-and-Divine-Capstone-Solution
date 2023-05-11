@@ -130,7 +130,18 @@ Public Class Form1
                 Player = 1
                 Player2Score = 0
             End If
-
+            Player1Score = 0
+            Player2Score = 0
+            lblRunningScore1.Text = Player1Score.ToString("C0")
+            lblRunningScore2.Text = Player2Score.ToString("C0")
+            pic1.Image = My.Resources.O1
+            If Player = 1 Then
+                lblPlayer1.Visible = True
+                lblPlayer2.Visible = False
+            Else
+                lblPlayer2.Visible = True
+                lblPlayer1.Visible = False
+            End If
         ElseIf Number Mod 25 = 1 Then
             pic1.Image = My.Resources.S2
             lblValue.Text = "$1000"
@@ -160,6 +171,14 @@ Public Class Form1
             Else
                 Player = 1
             End If
+            If Player = 1 Then
+                lblPlayer1.Visible = True
+                lblPlayer2.Visible = False
+            Else
+                lblPlayer2.Visible = True
+                lblPlayer1.Visible = False
+            End If
+            pic1.Image = My.Resources.O1
         ElseIf Number Mod 25 = 7 Then
             pic1.Image = My.Resources.S8
             lblValue.Text = "$2000"
@@ -187,6 +206,18 @@ Public Class Form1
                 Player = 1
                 Player2Score = 0
             End If
+            Player1Score = 0
+            Player2Score = 0
+            lblRunningScore1.Text = Player1Score.ToString("C0")
+            lblRunningScore2.Text = Player2Score.ToString("C0")
+            pic1.Image = My.Resources.O1
+            If Player = 1 Then
+                lblPlayer1.Visible = True
+                lblPlayer2.Visible = False
+            Else
+                lblPlayer2.Visible = True
+                lblPlayer1.Visible = False
+            End If
         ElseIf Number Mod 25 = 12 Then
             pic1.Image = My.Resources.S13
             lblValue.Text = "$1000"
@@ -211,6 +242,14 @@ Public Class Form1
                 Player = 2
             Else
                 Player = 1
+            End If
+            pic1.Image = My.Resources.O1
+            If Player = 1 Then
+                lblPlayer1.Visible = True
+                lblPlayer2.Visible = False
+            Else
+                lblPlayer2.Visible = True
+                lblPlayer1.Visible = False
             End If
         ElseIf Number Mod 25 = 17 Then
             pic1.Image = My.Resources.S18
@@ -245,13 +284,23 @@ Public Class Form1
             Else
                 Player = 1
             End If
+            If Player = 1 Then
+                lblPlayer1.Visible = True
+                lblPlayer2.Visible = False
+            Else
+                lblPlayer2.Visible = True
+                lblPlayer1.Visible = False
+            End If
+            pic1.Image = My.Resources.O1
         ElseIf Number Mod 25 = 24 Then
             pic1.Image = My.Resources.S25
             lblValue.Text = "$1000"
             spinValue = 1000
         End If
 
-        tmrWait.Enabled = True
+        If spinValue <> 0 Then
+            tmrWait.Enabled = True
+        End If
     End Sub
 
 
