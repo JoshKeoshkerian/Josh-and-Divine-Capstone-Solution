@@ -39,6 +39,9 @@ Partial Class Form1
         Me.Label8 = New System.Windows.Forms.Label()
         Me.lblTotalScore2 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.tmrWait = New System.Windows.Forms.Timer(Me.components)
+        Me.lblPlayer2 = New System.Windows.Forms.Label()
+        Me.lblPlayer1 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pic1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pic2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -191,11 +194,35 @@ Partial Class Form1
         Me.Label10.TabIndex = 14
         Me.Label10.Text = "Total Score"
         '
+        'tmrWait
+        '
+        Me.tmrWait.Interval = 3000
+        '
+        'lblPlayer2
+        '
+        Me.lblPlayer2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlayer2.Location = New System.Drawing.Point(799, 45)
+        Me.lblPlayer2.Name = "lblPlayer2"
+        Me.lblPlayer2.Size = New System.Drawing.Size(243, 49)
+        Me.lblPlayer2.TabIndex = 34
+        Me.lblPlayer2.Text = "Player 2 Turn"
+        '
+        'lblPlayer1
+        '
+        Me.lblPlayer1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlayer1.Location = New System.Drawing.Point(292, 45)
+        Me.lblPlayer1.Name = "lblPlayer1"
+        Me.lblPlayer1.Size = New System.Drawing.Size(243, 49)
+        Me.lblPlayer1.TabIndex = 33
+        Me.lblPlayer1.Text = "Player 1 Turn"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1368, 838)
+        Me.Controls.Add(Me.lblPlayer2)
+        Me.Controls.Add(Me.lblPlayer1)
         Me.Controls.Add(Me.lblTotalScore2)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.lblTotalScore1)
@@ -236,4 +263,7 @@ Partial Class Form1
     Friend WithEvents Label8 As Label
     Friend WithEvents lblTotalScore2 As Label
     Friend WithEvents Label10 As Label
+    Friend WithEvents tmrWait As Timer
+    Friend WithEvents lblPlayer2 As Label
+    Friend WithEvents lblPlayer1 As Label
 End Class

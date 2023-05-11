@@ -22,6 +22,7 @@ Partial Class Guess
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.lblBorder = New System.Windows.Forms.Label()
         Me.lblA = New System.Windows.Forms.Label()
         Me.lblC = New System.Windows.Forms.Label()
@@ -55,6 +56,9 @@ Partial Class Guess
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.btnNew = New System.Windows.Forms.Button()
         Me.lstMain = New System.Windows.Forms.ListBox()
+        Me.lblPlayer21 = New System.Windows.Forms.Label()
+        Me.lblPlayer22 = New System.Windows.Forms.Label()
+        Me.tmrBack = New System.Windows.Forms.Timer(Me.components)
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -382,7 +386,7 @@ Partial Class Guess
         '
         Me.lblPhrase.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblPhrase.Font = New System.Drawing.Font("Microsoft Sans Serif", 45.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPhrase.Location = New System.Drawing.Point(167, 81)
+        Me.lblPhrase.Location = New System.Drawing.Point(181, 110)
         Me.lblPhrase.Name = "lblPhrase"
         Me.lblPhrase.Size = New System.Drawing.Size(558, 149)
         Me.lblPhrase.TabIndex = 27
@@ -394,7 +398,7 @@ Partial Class Guess
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(922, 30)
+        Me.MenuStrip1.Size = New System.Drawing.Size(922, 28)
         Me.MenuStrip1.TabIndex = 28
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -408,7 +412,7 @@ Partial Class Guess
         'OpenToolStripMenuItem
         '
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(128, 26)
         Me.OpenToolStripMenuItem.Text = "Open"
         '
         'btnNew
@@ -431,11 +435,35 @@ Partial Class Guess
         Me.lstMain.TabIndex = 30
         Me.lstMain.Visible = False
         '
+        'lblPlayer21
+        '
+        Me.lblPlayer21.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlayer21.Location = New System.Drawing.Point(338, 40)
+        Me.lblPlayer21.Name = "lblPlayer21"
+        Me.lblPlayer21.Size = New System.Drawing.Size(243, 49)
+        Me.lblPlayer21.TabIndex = 31
+        Me.lblPlayer21.Text = "Player 1 Turn"
+        '
+        'lblPlayer22
+        '
+        Me.lblPlayer22.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPlayer22.Location = New System.Drawing.Point(354, 40)
+        Me.lblPlayer22.Name = "lblPlayer22"
+        Me.lblPlayer22.Size = New System.Drawing.Size(243, 49)
+        Me.lblPlayer22.TabIndex = 32
+        Me.lblPlayer22.Text = "Player 2 Turn"
+        '
+        'tmrBack
+        '
+        Me.tmrBack.Interval = 2000
+        '
         'Guess
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(922, 549)
+        Me.Controls.Add(Me.lblPlayer22)
+        Me.Controls.Add(Me.lblPlayer21)
         Me.Controls.Add(Me.lstMain)
         Me.Controls.Add(Me.btnNew)
         Me.Controls.Add(Me.lblPhrase)
@@ -510,4 +538,7 @@ Partial Class Guess
     Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents btnNew As Button
     Friend WithEvents lstMain As ListBox
+    Friend WithEvents lblPlayer21 As Label
+    Friend WithEvents lblPlayer22 As Label
+    Friend WithEvents tmrBack As Timer
 End Class
