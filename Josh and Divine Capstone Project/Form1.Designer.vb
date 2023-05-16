@@ -42,7 +42,6 @@ Partial Class Form1
         Me.tmrWait = New System.Windows.Forms.Timer(Me.components)
         Me.lblPlayer2 = New System.Windows.Forms.Label()
         Me.lblPlayer1 = New System.Windows.Forms.Label()
-        Me.btnSolve = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pic1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pic2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,21 +54,20 @@ Partial Class Form1
         'lblValue
         '
         Me.lblValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblValue.Location = New System.Drawing.Point(418, 17)
-        Me.lblValue.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblValue.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblValue.Location = New System.Drawing.Point(514, 21)
         Me.lblValue.Name = "lblValue"
-        Me.lblValue.Size = New System.Drawing.Size(144, 71)
+        Me.lblValue.Size = New System.Drawing.Size(289, 87)
         Me.lblValue.TabIndex = 3
         Me.lblValue.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Josh_and_Divine_Capstone_Project.My.Resources.Resources._69998644_EE6F_43B7_A43A_49E98CDE9CC7_removebg_preview
-        Me.PictureBox1.Location = New System.Drawing.Point(23, 37)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Location = New System.Drawing.Point(31, 46)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(142, 315)
+        Me.PictureBox1.Size = New System.Drawing.Size(189, 388)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
@@ -77,20 +75,20 @@ Partial Class Form1
         'pic1
         '
         Me.pic1.Image = Global.Josh_and_Divine_Capstone_Project.My.Resources.Resources.O1
-        Me.pic1.Location = New System.Drawing.Point(194, 103)
-        Me.pic1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pic1.Location = New System.Drawing.Point(259, 127)
+        Me.pic1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pic1.Name = "pic1"
-        Me.pic1.Size = New System.Drawing.Size(612, 568)
+        Me.pic1.Size = New System.Drawing.Size(816, 699)
         Me.pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pic1.TabIndex = 0
         Me.pic1.TabStop = False
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(23, 627)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Location = New System.Drawing.Point(31, 772)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(102, 44)
+        Me.Button1.Size = New System.Drawing.Size(136, 54)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
@@ -98,10 +96,10 @@ Partial Class Form1
         'pic2
         '
         Me.pic2.Image = Global.Josh_and_Divine_Capstone_Project.My.Resources.Resources._69998644_EE6F_43B7_A43A_49E98CDE9CC7_removebg_preview
-        Me.pic2.Location = New System.Drawing.Point(839, 37)
-        Me.pic2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.pic2.Location = New System.Drawing.Point(1119, 46)
+        Me.pic2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.pic2.Name = "pic2"
-        Me.pic2.Size = New System.Drawing.Size(142, 315)
+        Me.pic2.Size = New System.Drawing.Size(189, 388)
         Me.pic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pic2.TabIndex = 5
         Me.pic2.TabStop = False
@@ -109,30 +107,27 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(34, 28)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(45, 34)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(124, 33)
+        Me.Label1.Size = New System.Drawing.Size(165, 41)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Player 1"
         '
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(848, 28)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(1131, 34)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(124, 33)
+        Me.Label2.Size = New System.Drawing.Size(165, 41)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Player 2"
         '
         'Label3
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(19, 264)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(25, 325)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(156, 37)
+        Me.Label3.Size = New System.Drawing.Size(208, 46)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Score (Round)"
         '
@@ -140,10 +135,9 @@ Partial Class Form1
         '
         Me.lblRunningScore1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblRunningScore1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRunningScore1.Location = New System.Drawing.Point(21, 301)
-        Me.lblRunningScore1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblRunningScore1.Location = New System.Drawing.Point(28, 370)
         Me.lblRunningScore1.Name = "lblRunningScore1"
-        Me.lblRunningScore1.Size = New System.Drawing.Size(144, 65)
+        Me.lblRunningScore1.Size = New System.Drawing.Size(191, 80)
         Me.lblRunningScore1.TabIndex = 9
         Me.lblRunningScore1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -151,20 +145,18 @@ Partial Class Form1
         '
         Me.lblRunningScore2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblRunningScore2.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRunningScore2.Location = New System.Drawing.Point(837, 301)
-        Me.lblRunningScore2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblRunningScore2.Location = New System.Drawing.Point(1116, 370)
         Me.lblRunningScore2.Name = "lblRunningScore2"
-        Me.lblRunningScore2.Size = New System.Drawing.Size(144, 65)
+        Me.lblRunningScore2.Size = New System.Drawing.Size(191, 80)
         Me.lblRunningScore2.TabIndex = 11
         Me.lblRunningScore2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label6
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(835, 264)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Location = New System.Drawing.Point(1113, 325)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(156, 37)
+        Me.Label6.Size = New System.Drawing.Size(208, 46)
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "Score (Round)"
         '
@@ -172,20 +164,18 @@ Partial Class Form1
         '
         Me.lblTotalScore1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTotalScore1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalScore1.Location = New System.Drawing.Point(19, 456)
-        Me.lblTotalScore1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTotalScore1.Location = New System.Drawing.Point(25, 561)
         Me.lblTotalScore1.Name = "lblTotalScore1"
-        Me.lblTotalScore1.Size = New System.Drawing.Size(144, 65)
+        Me.lblTotalScore1.Size = New System.Drawing.Size(191, 80)
         Me.lblTotalScore1.TabIndex = 13
         Me.lblTotalScore1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label8
         '
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(16, 419)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label8.Location = New System.Drawing.Point(21, 516)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(156, 37)
+        Me.Label8.Size = New System.Drawing.Size(208, 46)
         Me.Label8.TabIndex = 12
         Me.Label8.Text = "Total Score"
         '
@@ -193,20 +183,18 @@ Partial Class Form1
         '
         Me.lblTotalScore2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblTotalScore2.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalScore2.Location = New System.Drawing.Point(837, 456)
-        Me.lblTotalScore2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTotalScore2.Location = New System.Drawing.Point(1116, 561)
         Me.lblTotalScore2.Name = "lblTotalScore2"
-        Me.lblTotalScore2.Size = New System.Drawing.Size(144, 65)
+        Me.lblTotalScore2.Size = New System.Drawing.Size(191, 80)
         Me.lblTotalScore2.TabIndex = 15
         Me.lblTotalScore2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label10
         '
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(835, 419)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Location = New System.Drawing.Point(1113, 516)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(156, 37)
+        Me.Label10.Size = New System.Drawing.Size(208, 46)
         Me.Label10.TabIndex = 14
         Me.Label10.Text = "Total Score"
         '
@@ -217,38 +205,26 @@ Partial Class Form1
         'lblPlayer2
         '
         Me.lblPlayer2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlayer2.Location = New System.Drawing.Point(599, 37)
-        Me.lblPlayer2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblPlayer2.Location = New System.Drawing.Point(820, 46)
         Me.lblPlayer2.Name = "lblPlayer2"
-        Me.lblPlayer2.Size = New System.Drawing.Size(182, 40)
+        Me.lblPlayer2.Size = New System.Drawing.Size(243, 49)
         Me.lblPlayer2.TabIndex = 34
         Me.lblPlayer2.Text = "Player 2 Turn"
         '
         'lblPlayer1
         '
         Me.lblPlayer1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPlayer1.Location = New System.Drawing.Point(219, 37)
-        Me.lblPlayer1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblPlayer1.Location = New System.Drawing.Point(265, 44)
         Me.lblPlayer1.Name = "lblPlayer1"
-        Me.lblPlayer1.Size = New System.Drawing.Size(182, 40)
+        Me.lblPlayer1.Size = New System.Drawing.Size(243, 49)
         Me.lblPlayer1.TabIndex = 33
         Me.lblPlayer1.Text = "Player 1 Turn"
         '
-        'btnSolve
-        '
-        Me.btnSolve.Location = New System.Drawing.Point(24, 558)
-        Me.btnSolve.Name = "btnSolve"
-        Me.btnSolve.Size = New System.Drawing.Size(123, 29)
-        Me.btnSolve.TabIndex = 35
-        Me.btnSolve.Text = "Solve The Puzzle"
-        Me.btnSolve.UseVisualStyleBackColor = True
-        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1026, 609)
-        Me.Controls.Add(Me.btnSolve)
+        Me.ClientSize = New System.Drawing.Size(1368, 750)
         Me.Controls.Add(Me.lblPlayer2)
         Me.Controls.Add(Me.lblPlayer1)
         Me.Controls.Add(Me.lblTotalScore2)
@@ -266,7 +242,7 @@ Partial Class Form1
         Me.Controls.Add(Me.lblValue)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.pic1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -295,5 +271,4 @@ Partial Class Form1
     Friend WithEvents tmrWait As Timer
     Friend WithEvents lblPlayer2 As Label
     Friend WithEvents lblPlayer1 As Label
-    Friend WithEvents btnSolve As Button
 End Class

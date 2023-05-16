@@ -34,37 +34,39 @@ Partial Class Solve
         'lblSolvePhrase
         '
         Me.lblSolvePhrase.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblSolvePhrase.Font = New System.Drawing.Font("Microsoft Sans Serif", 45.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSolvePhrase.Location = New System.Drawing.Point(40, 75)
-        Me.lblSolvePhrase.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblSolvePhrase.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSolvePhrase.Location = New System.Drawing.Point(12, 92)
         Me.lblSolvePhrase.Name = "lblSolvePhrase"
-        Me.lblSolvePhrase.Size = New System.Drawing.Size(419, 121)
+        Me.lblSolvePhrase.Size = New System.Drawing.Size(658, 148)
         Me.lblSolvePhrase.TabIndex = 28
         Me.lblSolvePhrase.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'txtSolve
         '
-        Me.txtSolve.Location = New System.Drawing.Point(62, 224)
+        Me.txtSolve.Location = New System.Drawing.Point(83, 276)
+        Me.txtSolve.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSolve.Multiline = True
         Me.txtSolve.Name = "txtSolve"
-        Me.txtSolve.Size = New System.Drawing.Size(235, 52)
+        Me.txtSolve.Size = New System.Drawing.Size(312, 63)
         Me.txtSolve.TabIndex = 29
         '
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(122, 9)
+        Me.Label1.Location = New System.Drawing.Point(163, 11)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(238, 52)
+        Me.Label1.Size = New System.Drawing.Size(317, 64)
         Me.Label1.TabIndex = 30
         Me.Label1.Text = "Solve The Puzzle"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnEnter
         '
-        Me.btnEnter.Location = New System.Drawing.Point(331, 239)
+        Me.btnEnter.Location = New System.Drawing.Point(441, 294)
+        Me.btnEnter.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnEnter.Name = "btnEnter"
-        Me.btnEnter.Size = New System.Drawing.Size(75, 23)
+        Me.btnEnter.Size = New System.Drawing.Size(100, 28)
         Me.btnEnter.TabIndex = 31
         Me.btnEnter.Text = "Enter"
         Me.btnEnter.UseVisualStyleBackColor = True
@@ -72,36 +74,39 @@ Partial Class Solve
         'lblSolved
         '
         Me.lblSolved.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSolved.Location = New System.Drawing.Point(508, 9)
+        Me.lblSolved.Location = New System.Drawing.Point(677, 11)
+        Me.lblSolved.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSolved.Name = "lblSolved"
-        Me.lblSolved.Size = New System.Drawing.Size(238, 88)
+        Me.lblSolved.Size = New System.Drawing.Size(317, 108)
         Me.lblSolved.TabIndex = 32
         Me.lblSolved.Text = "You Solved the Puzzle! Would you like to continue playing?"
         Me.lblSolved.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnYes
         '
-        Me.btnYes.Location = New System.Drawing.Point(531, 126)
+        Me.btnYes.Location = New System.Drawing.Point(708, 155)
+        Me.btnYes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnYes.Name = "btnYes"
-        Me.btnYes.Size = New System.Drawing.Size(75, 23)
+        Me.btnYes.Size = New System.Drawing.Size(100, 28)
         Me.btnYes.TabIndex = 33
         Me.btnYes.Text = "Yes"
         Me.btnYes.UseVisualStyleBackColor = True
         '
         'btnNo
         '
-        Me.btnNo.Location = New System.Drawing.Point(646, 126)
+        Me.btnNo.Location = New System.Drawing.Point(861, 155)
+        Me.btnNo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnNo.Name = "btnNo"
-        Me.btnNo.Size = New System.Drawing.Size(75, 23)
+        Me.btnNo.Size = New System.Drawing.Size(100, 28)
         Me.btnNo.TabIndex = 34
         Me.btnNo.Text = "No"
         Me.btnNo.UseVisualStyleBackColor = True
         '
         'Solve
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1067, 554)
         Me.Controls.Add(Me.btnNo)
         Me.Controls.Add(Me.btnYes)
         Me.Controls.Add(Me.lblSolved)
@@ -109,6 +114,7 @@ Partial Class Solve
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtSolve)
         Me.Controls.Add(Me.lblSolvePhrase)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Solve"
         Me.Text = "Solve"
         Me.ResumeLayout(False)

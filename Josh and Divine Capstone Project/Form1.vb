@@ -1,5 +1,5 @@
 ﻿Imports System.Drawing.Drawing2D
-
+Imports System.IO
 
 Public Class Form1
 
@@ -319,6 +319,43 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
+        Guess.lstMain.Text = String.Empty
+        pic2.Enabled = False
+
+        Guess.strFileName = String.Empty
+        Dim Open As New OpenFileDialog()
+        Dim myStreamReader As StreamReader
+        Open.Filter = "Text [*.txt*]|*.txt|All Files [*.*]|*.*"
+        Open.CheckFileExists = True
+        Open.Title = "OpenFile"
+        Open.ShowDialog(Me)
+        Try
+            Guess.strFileName = Open.FileName
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Information)
+        End Try
+        myStreamReader = File.OpenText(Open.FileName)
+        Do Until myStreamReader.Peek = -1
+            Guess.lstMain.Items.Add(myStreamReader.ReadLine())
+        Loop
+
+        Guess.Dash = String.Empty
+        Guess.Phrase = String.Empty
+        Guess.lblPhrase.Text = String.Empty
+
+        Guess.Phrase = Guess.lstMain.Items.Item(Int(Guess.lstMain.Items.Count * Rnd()))
+        Guess.Phrase = Guess.Phrase.ToUpper()
+
+        For Each Letter In Guess.Phrase
+            If Letter <> " " Then
+                Guess.Dash = Guess.Dash + "-"
+            Else
+                Guess.Dash = Guess.Dash + " "
+            End If
+        Next
+        Guess.lblPhrase.Text = Guess.Dash
+
+
         lblPlayer1.Visible = True
         lblPlayer2.Visible = False
         Player = 1
@@ -345,5 +382,17 @@ Public Class Form1
             lblPlayer2.Visible = True
             lblPlayer1.Visible = False
         End If
+        If Player = 1 Then
+            pic2.Enabled = False
+        Else
+            pic1.Enabled = False
+        End If
+        lblRunningScore1.Text = Player1Score.ToString("C0")
+        lblRunningScore2.Text = Player2Score.ToString("C0")
+        lblTotalScore1.Text = Player1TotalScore.ToString("C0")
+        lblTotalScore2.Text = Player2TotalScore.ToString("C0")
+
     End Sub
+
+
 End Class
